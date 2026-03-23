@@ -21,8 +21,11 @@
 ### 学习内容:books:
 
 《机器学习》P1-P8
+matplotlib
+- 绘图标记
+- 绘图线
+- 轴标签和标题
+- 网格线
+- 绘制多图
 
-matplotlib部分图
-
-![](C:\Users\邓杰文\AppData\Roaming\Typora\typora-user-images\image-20260323154344765.png)
 
