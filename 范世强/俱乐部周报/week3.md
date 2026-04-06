@@ -17,8 +17,9 @@
     softmax核心作用是将模型的原始分数转换为总和为1的概率分布，直接表示样本属于每一类的置信度。
   
     公式： 
-   $$ \hat{y}_k = \frac{e^{z_k - \max(\boldsymbol{z})}}{\displaystyle\sum_{j=1}^C e^{z_j - \max(\boldsymbol{z})}} $$
-   
+ $$
+\hat{y}_k = \frac{e^{z_k - \max(\mathbf{z})}}{\sum_{j=1}^C e^{z_j - \max(\mathbf{z})}}
+$$
 
     其中：
 - $$\hat{y}_k$$
@@ -116,11 +117,13 @@ $$
  
 1. 数学公式
  
-$$ \mathcal{L}_{\delta}=
-\begin{cases}
-\displaystyle \frac12 (y-\hat{y})^2, & |y-\hat{y}| \le \delta \\[6pt]
-\delta\cdot\big(|y-\hat{y}| - \displaystyle \frac{\delta}{2}\big), & |y-\hat{y}| > \delta
-\end{cases} $$
+$$
+\mathcal{L}_{\delta}= 
+\begin{cases} 
+\frac{1}{2} (y-\hat{y})^2, & |y-\hat{y}|\le \delta \\ 
+\delta \cdot \left( |y-\hat{y}| - \frac{\delta}{2} \right), & |y-\hat{y}|> \delta 
+\end{cases}
+$$
 
  
 - $$ \delta$$：人工设定的阈值（超参数，常用 1.0）
@@ -160,4 +163,4 @@ $$ \mathcal{L}_{\delta}=
 1.继续跟随视频学习并撰写详细的学内容
 2.在kaggle上找一个比赛先跟随引导进行复刻
 
-交的有点晚 :sweat_smile:
+交的有点晚,有的数学公式好像因为GitHub语法不兼容无法显示 :sweat_smile:
