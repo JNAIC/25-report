@@ -27,7 +27,8 @@ $$
 ​	***ReLu函数***
 
 $$
-f(x)=\begin{cases}x,for x\geq0\\0,for x<0\end{cases}
+f(x)=\begin{cases}x,for x\geq0\\
+0,for x<0\end{cases}
 $$
 
 ​	收敛速度快，计算更加简单，缓解了梯度消失问题，但是输出不以0为中心，无法避免梯度爆炸，且可能出现神经元坏死现象，即某些神经元可能永远不会被激活。
@@ -35,7 +36,8 @@ $$
 ​	***Leaky ReLu函数***
 
 $$
-f(x)=\begin{cases}x,for x\geq0\\0.01x,for x<0\end{cases}
+f(x)=\begin{cases}x,for x\geq0\\
+0.01x,for x<0\end{cases}
 $$
 
 ​	与ReLu相似，但可有效避免神经元坏死现象的出现。
