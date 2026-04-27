@@ -5,15 +5,15 @@
 1. 神经网络的梯度下降
 
    **梯度下降方程**
-
-
+   
 $$
+\begin{align}
 W^{[1]}=W^{[1]}-\alpha dW^{[1]}\\
 b^{[1]}=b^{[1]}-\alpha db^{[1]}\\
 W^{[2]}=W^{[2]}-\alpha dW^{[2]}\\
 b^{[2]}=b^{[2]}-\alpha db^{[2]}
+\end{align}
 $$
-​	
 
 ​	**为什么要进行梯度下降**
 
@@ -33,8 +33,10 @@ $$
 
 
 $$
-W^{[1]}=np.random.randn((2,2))*0.01
+\begin{align}
+W^{[1]}=np.random.randn((2,2))*0.01\\
 b^{[1]}=np.zero((2,1))
+\end{align}
 $$
 
 
